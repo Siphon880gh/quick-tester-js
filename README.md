@@ -8,6 +8,12 @@ Instructions
 - Evaluate statements with tester.assert(eval, "error message if failed")
 - Report pass and fail numbers with tester.report();
 
+Example
+--------------
+```
+tester.assert(sum===4, "error message if failed");
+```
+
 Screenshot
 --------------
 ![Report of passes and fails](README/report.png)
