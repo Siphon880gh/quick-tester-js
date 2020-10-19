@@ -6,8 +6,8 @@
  * 
  * Instructions
  * --------------
- * - Evaluate statements with tester.assert(eval, "error message if failed")
- * - Report pass and fail numbers with tester.report();
+ * - Evaluate statements with quickTester.assert(eval, "error message if failed")
+ * - Report pass and fail numbers with quickTester.report();
  * 
  */
 var quickTester = {
