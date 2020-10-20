@@ -13,12 +13,15 @@
 var quickTester = {
     passes: 0,
     fails: 0,
-    assert: function(evaled, msgFail) { // Do not use arrow functions because it'd disconnect the this pointer from the object
+    assert: function(evaled, msgFail, callback) { // Do not use arrow functions because it'd disconnect the this pointer from the object
         if(!evaled) {
-        console.assert(false, msgFail);
-        this.fails++;
+            console.assert(false, msgFail);
+            this.fails++;
+            if(typeof callback!=="undefined") {
+                callback();
+            }
         } else {
-        this.passes++;
+            this.passes++;
         } // if-else
     }, // assert
     report: function() {
