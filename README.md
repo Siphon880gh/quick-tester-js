@@ -6,6 +6,7 @@ By Weng Fei Fung.
 Instructions
 --------------
 - Evaluate statements with quickTester.assert(eval, "error message if failed")
+- You can pause the browser if eval false with: if(quickTester.assert(eval, "error message if failed")) debugger;
 - Report pass and fail numbers with quickTester.report();
 
 Advanced Use
